@@ -20,7 +20,7 @@ ax.plot(
 )
 
 plt.tight_layout()
-fig.savefig(os.path.join(cwd, "test_plot.png"))
-fig.savefig(os.path.join(cwd, "test_plot.jpg"))
-fig.savefig(os.path.join(cwd, "test_plot.pdf"))
+fig.savefig(os.path.join(cwd, "test_plot.png"), dpi=200)
+fig.savefig(os.path.join(cwd, "test_plot.jpg"), dpi=200)
+fig.savefig(os.path.join(cwd, "test_plot.pdf"), dpi=200)
 plt.show()
