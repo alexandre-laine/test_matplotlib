@@ -4,7 +4,7 @@ import os
 
 cwd = os.getcwd()
 
-x = np.linspace(0, 100, 1001)
+x = np.linspace(0, 100, 100001)
 y = np.random.random(size=x.shape[0])
 
 fig,ax = plt.subplots(
