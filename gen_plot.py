@@ -54,7 +54,7 @@ for non_gui in non_gui_backends:
         print ("    ",non_gui, "Is Available")
         plt.plot([1.5,2.0,2.5])
         fig = plt.gcf()
-        fig.suptitle(gui)
+        fig.suptitle(non_gui)
         fig.savefig(f"test_plot_{non_gui=}.png", dpi=200)
         fig.savefig(f"test_plot_{non_gui=}.jpg", dpi=200)
         fig.savefig(f"test_plot_{non_gui=}.pdf")
