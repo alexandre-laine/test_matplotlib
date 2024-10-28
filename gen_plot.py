@@ -21,7 +21,7 @@ for i in tqdm(range(10)):
     ax.plot(
         x,
         y,
-        "--k"
+        "|"
     )
 
 plt.tight_layout()
