@@ -52,7 +52,7 @@ for non_gui in non_gui_backends:
         matplotlib.use(non_gui, force=True)
         from matplotlib import pyplot as plt
         print ("    ",non_gui, "Is Available")
-        plt.plot([1.5,2.0,2.5])
+        plt.plot(np.random.random(10000))
         fig = plt.gcf()
         fig.suptitle(non_gui)
         fig.savefig(f"test_plot_{non_gui=}.png", dpi=200)
