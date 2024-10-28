@@ -20,7 +20,7 @@ ax.plot(
 plt.tight_layout()
 fig.savefig("test_plot.png", dpi=200)
 fig.savefig("test_plot.jpg", dpi=200)
-fig.savefig("test_plot.pdf")
+fig.savefig("test_plot.pdf", dpi=200)
 plt.show()
 
 
@@ -39,7 +39,7 @@ for gui in gui_env:
         fig.suptitle(gui)
         fig.savefig(f"test_plot_{gui=}.png", dpi=200)
         fig.savefig(f"test_plot_{gui=}.jpg", dpi=200)
-        fig.savefig(f"test_plot_{gui=}.pdf")
+        fig.savefig(f"test_plot_{gui=}.pdf", dpi=200)
 
         print ("Using ..... ",matplotlib.get_backend())
     except:
@@ -57,7 +57,7 @@ for non_gui in non_gui_backends:
         fig.suptitle(non_gui)
         fig.savefig(f"test_plot_{non_gui=}.png", dpi=200)
         fig.savefig(f"test_plot_{non_gui=}.jpg", dpi=200)
-        fig.savefig(f"test_plot_{non_gui=}.pdf")
+        fig.savefig(f"test_plot_{non_gui=}.pdf", dpi=200)
 
         print ("Using ..... ",matplotlib.get_backend())
     except:
