@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-x = np.linspace(0, 42., 101)
+x = np.linspace(0, 42., 1_000_000)
 y = np.random.random(size=x.shape[0])
 
 fig,ax = plt.subplots(
@@ -34,7 +34,7 @@ for gui in gui_env:
         matplotlib.use(gui, force=True)
         from matplotlib import pyplot as plt
         print ("    ",gui, "Is Available")
-        plt.plot(np.random.random(10000))
+        plt.plot(np.random.random(1_000_000))
         fig = plt.gcf()
         fig.suptitle(gui)
         fig.savefig(f"test_plot_{gui=}.png", dpi=200)
@@ -52,7 +52,7 @@ for non_gui in non_gui_backends:
         matplotlib.use(non_gui, force=True)
         from matplotlib import pyplot as plt
         print ("    ",non_gui, "Is Available")
-        plt.plot(np.random.random(10000))
+        plt.plot(np.random.random(1_000_000))
         fig = plt.gcf()
         fig.suptitle(non_gui)
         fig.savefig(f"test_plot_{non_gui=}.png", dpi=200)
